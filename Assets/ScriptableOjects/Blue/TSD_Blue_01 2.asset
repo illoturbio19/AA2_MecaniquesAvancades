@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4f79dcb036221f46a6e1819b819d476, type: 3}
-  m_Name: TSD_Red_01
+  m_Name: TSD_Blue_01 2
   m_EditorClassIdentifier: Assembly-CSharp::TileShapeData
-  tileId: 
-  displayName: 
-  tileSprite: {fileID: 0}
-  tileColor: {r: 1, g: 1, b: 1, a: 1}
+  tileId: red_01
+  displayName: Red Tile
+  tileSprite: {fileID: 90827753512560391, guid: 42dd2d05e6d25e742ac5777d39137ded, type: 3}
+  tileColor: {r: 0, g: 0, b: 1, a: 1}
   logicalSize: {x: 1, y: 1}
   canRotate: 1
   defaultRotation: 0
