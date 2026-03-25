@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29db9f70c8fe75246bf2894bece7c373, type: 3}
+  m_Name: SO_Zone_LowGravity
+  m_EditorClassIdentifier: Assembly-CSharp::ZoneProfileSO
+  zoneId: LowGravity
+  priority: 10
+  affectsPlayer: 1
+  affectsPiece: 1
+  gravityDirection: {x: 0, y: -1}
+  gravityMultiplier: 0.35
+  moveSpeedMultiplier: 1
+  jumpMultiplier: 1.2
+  groundAccelerationMultiplier: 1
+  airAccelerationMultiplier: 1
+  clampVelocity: 0
+  maxHorizontalSpeed: 8
+  maxVerticalSpeed: 16
+  bounceMultiplier: 1
+  scaleMultiplier: 1
+  pushStrengthMultiplier: 1
+  enableWallAttach: 0
+  pieceGravityMultiplier: 1
