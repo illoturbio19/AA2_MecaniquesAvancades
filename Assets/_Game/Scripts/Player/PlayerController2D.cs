@@ -3,6 +3,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(Animator))]
 public class PlayerController2D : MonoBehaviour, IZoneAffectable
 {
     [Header("Base Movement")]
@@ -25,8 +26,12 @@ public class PlayerController2D : MonoBehaviour, IZoneAffectable
     [SerializeField] private float wallMoveSpeed = 7f;
     [SerializeField] private float wallJumpForce = 13f;
 
+    [Header("Visuals")]
+    [SerializeField] private SpriteRenderer spriteRenderer;
+
     private Rigidbody2D rb;
     private Collider2D col;
+    private Animator animator;
 
     private float moveInput;
     private bool jumpPressed;
@@ -44,10 +49,20 @@ public class PlayerController2D : MonoBehaviour, IZoneAffectable
     public int FacingSign => facingRight ? 1 : -1;
     public float CurrentPushMultiplier => currentZone != null ? currentZone.pushStrengthMultiplier : 1f;
 
+    // Animator parameter hashes
+    private static readonly int SpeedHash = Animator.StringToHash("Speed");
+    private static readonly int IsGroundedHash = Animator.StringToHash("IsGrounded");
+    private static readonly int VerticalVelocityHash = Animator.StringToHash("VerticalVelocity");
+    private static readonly int IsWallAttachedHash = Animator.StringToHash("IsWallAttached");
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
+        animator = GetComponent<Animator>();
+
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
@@ -56,6 +71,8 @@ public class PlayerController2D : MonoBehaviour, IZoneAffectable
     private void Update()
     {
         ReadInput();
+        UpdateAnimator();
+        UpdateFacing();
     }
 
     private void FixedUpdate()
@@ -72,6 +89,7 @@ public class PlayerController2D : MonoBehaviour, IZoneAffectable
 
     private void ReadInput()
     {
+        // Si la gravetat �s lateral, moure's amb amunt/avall
         if (Mathf.Abs(GravityDirection.x) > 0.5f)
         {
             moveInput = 0f;
@@ -89,17 +107,13 @@ public class PlayerController2D : MonoBehaviour, IZoneAffectable
         {
             jumpPressed = true;
         }
-
-        if (moveInput > 0.01f)
-            facingRight = true;
-        else if (moveInput < -0.01f)
-            facingRight = false;
     }
 
     private KeyCode GetJumpKey()
     {
         if (Mathf.Abs(GravityDirection.x) > 0.5f)
         {
+            // Si la gravetat tira cap a la dreta, saltes "fora" amb l'esquerra
             return GravityDirection.x > 0 ? KeyCode.LeftArrow : KeyCode.RightArrow;
         }
 
@@ -237,6 +251,44 @@ public class PlayerController2D : MonoBehaviour, IZoneAffectable
 
         float scale = currentZone != null ? currentZone.scaleMultiplier : 1f;
         transform.localScale = new Vector3(scale, scale, 1f);
+    }
+
+    private void UpdateFacing()
+    {
+        if (Mathf.Abs(moveInput) > 0.01f)
+        {
+            // Quan la gravetat �s normal, esquerra/dreta
+            if (Mathf.Abs(GravityDirection.y) > 0.5f)
+            {
+                facingRight = moveInput > 0f;
+            }
+            // Quan la gravetat �s lateral, fem servir el moviment amunt/avall
+            else
+            {
+                // Aix� �s opcional; mant� la cara segons el sentit del moviment vertical
+                if (moveInput > 0.01f) facingRight = true;
+                else if (moveInput < -0.01f) facingRight = false;
+            }
+        }
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.flipX = !facingRight;
+        }
+    }
+
+    private void UpdateAnimator()
+    {
+        if (animator == null) return;
+
+        Vector2 tangent = TangentDirection;
+        float tangentSpeed = Mathf.Abs(Vector2.Dot(rb.linearVelocity, tangent));
+        float verticalAlongGravity = Vector2.Dot(rb.linearVelocity, -GravityDirection);
+
+        animator.SetFloat(SpeedHash, tangentSpeed);
+        animator.SetBool(IsGroundedHash, isGrounded);
+        animator.SetFloat(VerticalVelocityHash, verticalAlongGravity);
+        animator.SetBool(IsWallAttachedHash, wallAttached);
     }
 
     private Vector2 GetGravityDirection()
