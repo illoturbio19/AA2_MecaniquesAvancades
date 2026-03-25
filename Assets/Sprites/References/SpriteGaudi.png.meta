@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 2e396063d7ad0494382f0709e69d2e05
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7230887635710375965
+    second: SpriteGaudi_0
+  - first:
+      213: 6775960204357080734
+    second: SpriteGaudi_1
+  - first:
+      213: -6305269428670156798
+    second: SpriteGaudi_2
+  - first:
+      213: 5826453396531131777
+    second: SpriteGaudi_3
+  - first:
+      213: -7500647080482102727
+    second: SpriteGaudi_4
+  - first:
+      213: 1709314637152401614
+    second: SpriteGaudi_5
+  - first:
+      213: -8362760868987348462
+    second: SpriteGaudi_6
+  - first:
+      213: 7276451622553802690
+    second: SpriteGaudi_7
+  - first:
+      213: 5064414651398484198
+    second: SpriteGaudi_8
+  - first:
+      213: 8172135749880101363
+    second: SpriteGaudi_9
+  - first:
+      213: 8363956287021896055
+    second: SpriteGaudi_10
+  - first:
+      213: -5634799938819459099
+    second: SpriteGaudi_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteGaudi_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 634
+        width: 160
+        height: 278
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d18f7496ef5495460800000000000000
+      internalID: 7230887635710375965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_1
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 634
+        width: 166
+        height: 278
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9613e0c7eb090e50800000000000000
+      internalID: 6775960204357080734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_2
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 634
+        width: 170
+        height: 276
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2003cf28cde2f78a0800000000000000
+      internalID: -6305269428670156798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_3
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 638
+        width: 196
+        height: 272
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1853b988e78bbd050800000000000000
+      internalID: 5826453396531131777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 318
+        width: 160
+        height: 266
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9322b4e683958e790800000000000000
+      internalID: -7500647080482102727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_5
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 318
+        width: 178
+        height: 264
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec838dc2b94b8b710800000000000000
+      internalID: 1709314637152401614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_6
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 316
+        width: 172
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ad8762c4181fb80800000000000000
+      internalID: -8362760868987348462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_7
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 322
+        width: 196
+        height: 254
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c752abc2362bf460800000000000000
+      internalID: 7276451622553802690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_8
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 62
+        width: 148
+        height: 196
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0f3e30b4a684640800000000000000
+      internalID: 5064414651398484198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_9
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 62
+        width: 150
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9bfdbaa22496170800000000000000
+      internalID: 8172135749880101363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_10
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 62
+        width: 150
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771d5dccdedb21470800000000000000
+      internalID: 8363956287021896055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteGaudi_11
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 62
+        width: 148
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7f5426f4b2dc1b0800000000000000
+      internalID: -5634799938819459099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3d0aa3c0a9bc9df419bca09587b9d66c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SpriteGaudi_0: 7230887635710375965
+      SpriteGaudi_1: 6775960204357080734
+      SpriteGaudi_10: 8363956287021896055
+      SpriteGaudi_11: -5634799938819459099
+      SpriteGaudi_2: -6305269428670156798
+      SpriteGaudi_3: 5826453396531131777
+      SpriteGaudi_4: -7500647080482102727
+      SpriteGaudi_5: 1709314637152401614
+      SpriteGaudi_6: -8362760868987348462
+      SpriteGaudi_7: 7276451622553802690
+      SpriteGaudi_8: 5064414651398484198
+      SpriteGaudi_9: 8172135749880101363
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
