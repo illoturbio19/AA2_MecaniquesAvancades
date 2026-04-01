@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 945238944527431831}
   - component: {fileID: 5594747119683976525}
   - component: {fileID: 597609101297322833}
+  - component: {fileID: 3069836692616745069}
   m_Layer: 0
   m_Name: PF_Zone_LowGravity
   m_TagString: Untagged
@@ -60,7 +61,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 5cdf938351b614f459c6d0e05db300f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,7 +85,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.0016605069, g: 0.6313726, b: 0, a: 0.21960784}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.21960784}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -152,3 +153,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZoneArea2D
   profile: {fileID: 11400000, guid: 145129042bd21bc46a78632d160d23ef, type: 2}
+  visualController: {fileID: 3069836692616745069}
+--- !u!114 &3069836692616745069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886464850894648136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11523965d7bd56b4c81fcc58ff913ae9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZoneVisualController
+  baseColor: {r: 0.08018869, g: 1, b: 0.1939107, a: 0.85}
+  accentColor: {r: 0.029522773, g: 0.3962264, b: 0, a: 0.85}
+  groutColor: {r: 1, g: 1, b: 1, a: 1}
+  tileScale: 10.2
+  lineWidth: 0.001
+  colorVariation: 0.944
+  driftSpeed: 0.06
+  driftAmount: 0.108
+  pulse: 1.68
+  sparkle: 0.25

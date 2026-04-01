@@ -5,6 +5,7 @@ using UnityEngine;
 public class ZoneArea2D : MonoBehaviour
 {
     [SerializeField] private ZoneProfileSO profile;
+    [SerializeField] private ZoneVisualController visualController;
 
     public ZoneProfileSO Profile => profile;
 
@@ -12,6 +13,12 @@ public class ZoneArea2D : MonoBehaviour
     {
         Collider2D col = GetComponent<Collider2D>();
         col.isTrigger = true;
+    }
+
+    private void Awake()
+    {
+        if (visualController == null)
+            visualController = GetComponent<ZoneVisualController>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
