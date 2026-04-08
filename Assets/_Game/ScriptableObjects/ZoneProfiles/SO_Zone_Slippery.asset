@@ -20,9 +20,9 @@ MonoBehaviour:
   gravityMultiplier: 1
   moveSpeedMultiplier: 1
   jumpMultiplier: 1
-  groundAccelerationMultiplier: 1.2
+  groundAccelerationMultiplier: 1
   airAccelerationMultiplier: 1
-  groundDecelerationMultiplier: 0.001
+  groundDecelerationMultiplier: -0.2
   airDecelerationMultiplier: 0.15
   clampVelocity: 0
   maxHorizontalSpeed: 8

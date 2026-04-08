@@ -181,4 +181,12 @@ public class PieceController2D : MonoBehaviour, IZoneAffectable
         rb.linearVelocity = reflected;
         ClampVelocityIfNeeded();
     }
+    public void BreakAndRespawn(Vector2 respawnPosition)
+    {
+        SetHeld(false);
+
+        rb.linearVelocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+        transform.position = respawnPosition;
+    }
 }

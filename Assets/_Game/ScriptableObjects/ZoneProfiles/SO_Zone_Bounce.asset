@@ -27,7 +27,7 @@ MonoBehaviour:
   clampVelocity: 1
   maxHorizontalSpeed: 16
   maxVerticalSpeed: 26
-  bounceMultiplier: 1.2
+  bounceMultiplier: 1.5
   minimumBounceSpeed: 13
   scaleMultiplier: 1
   pushStrengthMultiplier: 1

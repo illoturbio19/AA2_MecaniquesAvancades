@@ -19,13 +19,16 @@ MonoBehaviour:
   gravityDirection: {x: 0, y: -1}
   gravityMultiplier: 0.35
   moveSpeedMultiplier: 1
-  jumpMultiplier: 1.2
+  jumpMultiplier: 1.01
   groundAccelerationMultiplier: 1
-  airAccelerationMultiplier: 1
+  airAccelerationMultiplier: 1.5
+  groundDecelerationMultiplier: 1
+  airDecelerationMultiplier: 1
   clampVelocity: 0
   maxHorizontalSpeed: 8
   maxVerticalSpeed: 16
   bounceMultiplier: 1
+  minimumBounceSpeed: 8
   scaleMultiplier: 1
   pushStrengthMultiplier: 1
   enableWallAttach: 0

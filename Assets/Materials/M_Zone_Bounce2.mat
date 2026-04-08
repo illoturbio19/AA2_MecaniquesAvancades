@@ -47,6 +47,7 @@ Material:
     - _DriftSpeed: 0.25
     - _EdgeThickness: 0.05
     - _EnableExternalAlpha: 0
+    - _PatternScale: 4
     - _Pulse: 0.2
     - _Sparkle: 0.1
     - _TileScale: 6

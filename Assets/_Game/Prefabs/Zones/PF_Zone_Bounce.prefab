@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5594747119683976525}
   - component: {fileID: 597609101297322833}
   - component: {fileID: 8834102264161367167}
+  - component: {fileID: 5898733293371904093}
   m_Layer: 0
   m_Name: PF_Zone_Bounce
   m_TagString: Untagged
@@ -176,3 +177,16 @@ MonoBehaviour:
   driftAmount: 0.03
   pulse: 0.35
   sparkle: 0.25
+--- !u!114 &5898733293371904093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2886464850894648136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7435a4c7d43576d499445f0df0f6d224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicZoneEffect
+  effectType: 1

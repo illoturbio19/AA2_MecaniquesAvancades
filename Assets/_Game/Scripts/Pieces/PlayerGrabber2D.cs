@@ -6,6 +6,7 @@ public class PlayerGrabber2D : MonoBehaviour
     [SerializeField] private float grabRange = 1.2f;
     [SerializeField] private float throwForce = 10f;
     [SerializeField] private LayerMask pieceMask;
+    [SerializeField] private PlayerSFX playerSFX;
 
     private PlayerController2D player;
     private Collider2D playerCollider;
@@ -15,6 +16,9 @@ public class PlayerGrabber2D : MonoBehaviour
     {
         player = GetComponent<PlayerController2D>();
         playerCollider = GetComponent<Collider2D>();
+
+        if (playerSFX == null)
+            playerSFX = GetComponent<PlayerSFX>();
     }
 
     private void Update()
@@ -58,6 +62,8 @@ public class PlayerGrabber2D : MonoBehaviour
 
         Physics2D.IgnoreCollision(playerCollider, piece.PieceCollider, false);
         piece.Throw(throwDir * throwForce);
+
+        playerSFX?.PlayThrow();
     }
 
     private Vector2 GetThrowDirection()
